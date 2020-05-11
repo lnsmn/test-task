@@ -6,16 +6,16 @@ test("My first test", async (t) => {
   await t
     .typeText(".header-search-input", "nuxt.js")
     .pressKey("enter")
-    .expect(Selector("em").innerText)
-    .eql("nuxt.js");
+    .expect(Selector("div > a[href='/nuxt/nuxt.js']").innerText)
+    .eql("nuxt/nuxt.js");
 });
 
 test("My second test", async (t) => {
   await t
     .typeText(".header-search-input", "vue")
     .pressKey("enter")
-    .expect(Selector("em").innerText)
-    .eql("vue");
+    .expect(Selector("div > a[href='/vuejs/vue']").innerText)
+    .eql("vuejs/vue");
 });
 
 test.page`https://github.com/nuxt/nuxt.js`("My third test", async (t) => {
