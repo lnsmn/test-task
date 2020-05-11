@@ -4,7 +4,7 @@
   "description": "3 tests",
   "main": "example-task.js",
   "scripts": {
-    "test": "testcafe remote example-task.js"
+    "test": "testcafe chrome example-task.js"
   },
   "author": "Bogdan Zakovinko",
   "license": "ISC",
