@@ -1,0 +1,15 @@
+{
+  "name": "test-for-work",
+  "version": "1.0.0",
+  "description": "3 tests",
+  "main": "example-task.js",
+  "scripts": {
+    "test": "testcafe safari example-task.js"
+  },
+  "author": "Bogdan Zakovinko",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^1.8.4",
+    "testcafe-reporter-xunit": "^2.1.0"
+  }
+}
